@@ -30,12 +30,7 @@ from utils.expiry_logic import (
 # ──────────────────────────────────────────────────────────────────────
 # Page configuration — sidebar collapsed & hidden
 # ──────────────────────────────────────────────────────────────────────
-st.set_page_config(
-    page_title="Bhavcopy Analyzer",
-    page_icon="📊",
-    layout="wide",
-    initial_sidebar_state="collapsed",
-)
+
 
 # ──────────────────────────────────────────────────────────────────────
 # Custom CSS
@@ -50,13 +45,7 @@ st.markdown(
         font-family: 'Inter', sans-serif;
     }
 
-    /* ───── Hide sidebar completely ───── */
-    section[data-testid="stSidebar"],
-    button[data-testid="stSidebarCollapsedControl"],
-    [data-testid="collapsedControl"] {
-        display: none !important;
-    }
-
+    
     /* ───── Header banner ───── */
     .hero-banner {
         background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
@@ -142,7 +131,6 @@ st.markdown(
     /* ───── Hide default Streamlit branding ───── */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
 
     /* ───── Dividers ───── */
     hr {

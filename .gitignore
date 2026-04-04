@@ -1,0 +1,13 @@
+# Temporary folders
+uploads/
+output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# IDE
+.vscode/
+.idea/
